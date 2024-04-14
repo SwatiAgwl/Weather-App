@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+            <h1>WEATHER APP</h1>
+            <!-- choosing your loc or search loc -->
+            <div class="choose-tab fonting">
+                <!-- <button>Your Weather</button>
+                <button>Search Weather</button> -->
+                <p class="your tab">Your Weather</p>
+                <p class="search tab">Search Weather</p>
+            </div>
+            
+            
+            <!-- grant location page -->
+            <div class="sub-container grant-loc">
+                <img src="./assets/gps.jpeg" alt="" height="100" width="100" loading="lazy">
+                <h3>Grant Location Access</h3>
+                <p>Allow access to get weather information</p>
+                <button class="grant-btn">Grant Access</button>
+            </div>
+
+            
+             <!-- search weather page -->
+             <form class="search-form">
+                <input type="text" placeholder="search for city" class="search-input">
+                <button class="search-btn">Submit</button>
+            </form>
+            <!-- error image -->
+            <div class="error-container">
+                <img src="" alt="" class="error-img">
+            </div>
+            <!-- your weather page -->
+            <div class="sub-container weather-details">
+                <div class="city">
+                    <p class="city-name"></p>
+                    <img src="" alt="" class="country-flag">
+                </div>
+                <p class="description"></p>
+                <img class="visual" src="" alt="">
+                <p class="temp">deg</p>
+                <div class="extra-details">
+                    <div class="box b1">
+                        <img src="./assets/wind-symb.png" alt="" height="80px" width="80px">
+                        <p>WindSpeed</p>
+                        <p class="windspeed">km/hr</p>
+                    </div>
+                    <div class="box b2">
+                        <img src="./assets/humidity.jpeg" alt="" height="80px" width="80px">
+                        <p>Humidity</p>
+                        <p class="humidity"></p>
+                    </div>
+                    <div class="box b3">
+                        <img src="./assets/clouds.jpeg" alt="" height="80px" width="80px">
+                        <p>Clouds</p>
+                        <p class="clouds"></p>
+                    </div>
+                </div>
+            </div>
+
+           
+           
+            <!-- loading section -->
+            <div class="sub-container loading-container">
+                <img src="./assets/Loading_icon.gif" alt="" height="100px" width="100px">
+                <p>Loading</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

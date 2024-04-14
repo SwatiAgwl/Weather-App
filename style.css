@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 3rem;
+    /* background-color: aqua; */
+    width: 90%;
+    max-width: 550px;
+   
+}
+.container h1{
+    color: aliceblue;
+    font-size:2.7rem;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.choose-tab{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.fonting {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.tab{
+    cursor: pointer;
+    padding: 5px 8px;
+    font-size: 1.2rem;
+    /* background: #000; */
+}
+.tab.current-tab{
+    background-color: rgba(219,226,239,0.5);
+    border-radius: 4px;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.grant-loc{
+    display: none;
+}
+.grant-loc.active{
+    display: flex;
+}
+
+
+.weather-details{
+    display: none;
+}
+.weather-details.active{
+    display: flex;
+}
+
+
+.search-form{
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.search-form input{
+    width: 70%;
+}
+.search-form button{
+    padding: 0.2rem;
+    width: 25%;
+    font-size: 1rem;
+}
+
+.search-form{
+    display: none;
+}
+.search-form.active{
+    display: flex;
+}
+
+.loading-container p{
+    font-size:  1.5rem;
+    font-weight: 500;
+}
+.loading-container{
+    display: none;
+}
+.loading-container.active{
+    display: flex;
+}
+
+
+.city{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+h1,.description,.visual,.temp{
+    text-align: center;
+}
+.extra-details{ 
+    display: flex;
+    gap: 0.7rem;
+}
+.city-name{
+    font-size: 2rem;
+} 
+.country-flag{
+    height: 30px;
+    width: 30px;
+}
+.description{
+    font-size: 1.7rem;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+.visual{
+    height: 50px; 
+    width: 50px;
+  
+}
+.temp{
+    font-size: 2rem;
+} 
+.box{
+    background-color: rgba(128, 128, 128, 0.227);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box img{
+    margin-bottom: 0.5rem;
+}
+.grant-loc h3{
+    font-size: 1.7rem;
+}
+.grant-loc p{
+    font-size: 1.3rem;
+}
+.grant-loc button{
+    padding: 0.7rem;
+    font-size: 1rem;
+}
+
+.error-container{
+    display: none;
+}
+.error-container.active{
+    display: flex;
+}
